@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q 4. write a Jquery code to get a single element from a selection  -->
+    <ul>
+        <li>Html Tutorial</li>
+        <li>Mongodb Tutorial</li>
+        <li>python Turorial</li>
+    </ul>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var finditem = $("ul li").eq(0);
+            console.log(finditem.text());
+        })
+    </script>
+</body>
+</html>

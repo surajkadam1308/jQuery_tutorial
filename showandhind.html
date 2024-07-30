@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show and hind </title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+</head>
+  <style>
+    #para2{
+        padding: 15px;
+        background: #F0E68C;
+    }
+  </style>
+<body>
+    
+    <p id="para">This is a paragrap  </p>
+    <button id="button"> hide </button>
+    <button class="show">show</button>
+    <p id="para2">this is paragrap</p>
+    <button id="btn2">show</button>
+
+    
+    <script>
+
+        //------ opratons on para---------------
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("#para").hide();
+            })
+            $(".show").click(function(){
+                $("#para").show( "medium") ;
+            })
+        })
+        //----------------------------------------
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+        $("#para2").toggle("slow", function(){
+            // Code to be executed
+            alert("The show effect is completed.");
+        });
+    });
+        });
+    </script>
+</body>
+</html>
